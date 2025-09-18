@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mabini Batangas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-p1CmX+Yk5mI1KqWz2Wqk0qf7xqvVh6aY2k4jR6x9VhQYk1G7mT1c5w3sKxZ9e9gB1q6sXb0h9z1r7sD9x1k2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Your external CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Explore Mabini, Batangas — diving, Mt. Gulugod Baboy, beaches, and local flavors. Plan your visit!">
+
+  
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="badge">MB</div>
+        <div>
+          <div style="font-weight:700;font-family:'Montserrat',sans-serif">Mabini</div>
+          <div style="font-size:12px;color:var(--muted)">Batangas, Philippines</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#attractions">Attractions</a>
+        <a href="#plan">Plan Your Visit</a>
+        <a href="#map">Map</a>
+        <a href="#contact">Contact</a>
+        <a class="cta-btn" href="#plan">Plan Your Visit</a>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobileNav"><i class="fa fa-bars"></i></button>
+    </header>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="#attractions">Attractions</a>
+      <a href="#plan">Plan Your Visit</a>
+      <a href="#map">Map</a>
+      <a href="#contact">Contact</a>
+      <a class="cta-btn" href="#plan">Plan Your Visit</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card fade-in">
+        <h1 class="tagline">Discover Mabini</h1>
+        <p class="lead">Dive the pristine reefs, hike Mt. Gulugod Baboy for sunrise views, relax on powdery beaches, and taste fresh Batangas cuisine.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary shadow-cta" href="#plan"> Plan Your Visit</a>
+          <a class="btn btn-outline" href="#attractions">See Attractions</a>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+          <div style="display:flex;align-items:center;gap:8px">
+            <i class="fa fa-route" aria-hidden="true"></i>
+            <div style="font-size:14px;color:var(--muted)"></div>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="hero-media fade-in" style="animation-delay:.15s">
+        <img src="https://www.vacationhive.com/images/hives/61/61-anilao-batangas-main-img-new.jpg" alt="Mabini diving and clear water">
+      </div>
+    </section>
+
+    <!-- ATTRACTIONS CAROUSEL -->
+    <section id="attractions" class="section">
+      <h2>Featured Attractions</h2>
+      <div class="carousel" aria-roledescription="carousel">
+        <div class="slides" id="slides">
+
+          <!-- Slide 1: Diving -->
+          <article class="slide" role="group" aria-label="Slide 1 of 4">
+            <div class="slide-media">
+              <img src="https://i0.wp.com/www.traveling-up.com/wp-content/uploads/2018/02/fwd-scuba-diving-bucketlist-anilao-batangas-underwater-travelup.jpg?ssl=1" alt="Scuba diving in clear water">
+            </div>
+            <div class="slide-desc">
+              <h3>Diving</h3>
+              <p class="muted">Mabini is a gateway to spectacular coral gardens and abundant marine life. Suitable for beginners and experienced divers.</p>
+              <p style="margin-top:12px"><strong>Top spots:</strong> Anilao, Mabini, Batangas</p>
+              <p style="margin-top:14px"><a class="btn btn-primary" href="#plan">Book a Dive</a></p>
+            </div>
+          </article>
+
+          <!-- Slide 2: Mt. Gulugod Baboy -->
+          <article class="slide" role="group" aria-label="Slide 2 of 4">
+            <div class="slide-media"><img src="https://campsites.ph/uploads/images/campsite-29-mt-gulugod-baboy-cc48e4150bc50c21b26d05a6b8ba69dc.jpg" alt="Mt Gulugod Baboy sunrise"></div>
+            <div class="slide-desc">
+              <h3>Mt. Gulugod Baboy</h3>
+              <p class="muted">A short hike with an unforgettable sunrise view. Perfect for photographers and casual hikers.</p>
+              <p style="margin-top:12px"><strong>Spot:</strong> Nag-iba, Mabini, Batangas</p>
+              <p style="margin-top:14px"><a class="btn btn-primary" href="#plan">Hike Info</a></p>
+            </div>
+          </article>
+
+          <!-- Slide 3: Resorts -->
+          <article class="slide" role="group" aria-label="Slide 3 of 4">
+            <div class="slide-media"><img src="https://altheasadventures.com/wp-content/uploads/2021/05/img_7759-1.jpg?w=1024" alt="beach resort Mabini"></div>
+            <div class="slide-desc">
+              <h3>Camp Netanya</h3>
+              <p class="muted">Relax on scenic resort in Camp Netanya.</p>
+              <p style="margin-top:12px"><strong>Spot:</strong> <strong> Ligaya, Mabini, Batangas</strong></p>
+              <p style="margin-top:14px"><a class="btn btn-primary" href="#plan">Find Resorts</a></p>
+            </div>
+          </article>
+
+      
+        </div>
+
+        <div class="dots" id="dots" aria-hidden="false">
+          <button class="dot active" aria-label="Go to slide 1"></button>
+          <button class="dot" aria-label="Go to slide 2"></button>
+          <button class="dot" aria-label="Go to slide 3"></button>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick highlights -->
+    <section class="section">
+      <h2>Quick Highlights</h2>
+      <div class="grid">
+        <article class="card fade-in">
+          <img src="https://rayadivers.com/cdn/shop/collections/GOPR8377.jpg?v=1746896192&width=2400" alt="snorkeling">
+          <div>
+            <h4>Snorkel & Swim</h4>
+            <div class="muted">Clear waters and colorful reefs. Gear rentals nearby.</div>
+          </div>
+        </article>
+
+        <article class="card fade-in" style="animation-delay:.05s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMbEU78GLP2IFgf3Tpimb0NLxGPgX1Tq3vA&s" alt="hiking trail">
+          <div>
+            <h4>Sunrise Hike</h4>
+            <div class="muted">Short, scenic trails for unforgettable views.</div>
+          </div>
+        </article>
+
+        <article class="card fade-in" style="animation-delay:.08s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3d12aXk_4gw0cEhB2iGFUW9LSz1h0rHcLjg&s" alt="local food">
+          <div>
+            <h4>Beaches and Resorts</h4>
+            <div class="muted">Perfect views near at the beach and resorts.</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Plan your visit -->
+    <section id="plan" class="section">
+      <h2>Plan Your Visit</h2>
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:start">
+        <div class="hero-card">
+          <h3 style="margin-top:0">Before you go</h3>
+          <ul class="muted" style="line-height:1.7">
+            <li>Bring reef-safe sunscreen and snorkeling gear or rent on-site.</li>
+            <li>Respect local communities and marine conservation rules.</li>
+            <li>Book diving sessions and guided hikes in advance during peak season.</li>
+          </ul>
+          <p style="margin-top:12px"><a class="btn btn-primary" href="#contact">Contact Local Guides</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="section">
+      <h2>Where is Mabini?</h2>
+      <div class="map-wrap">
+        <!-- Mabini, Batangas coordinates centered -->
+        <iframe src="https://www.google.com/maps?q=Mabini%20Batangas&output=embed" title="Mabini map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center">
+        <div>
+          <strong>Mabini Tourism</strong>
+          <div class="muted">Email:mabinibatangas@gmail.com</div>
+          <div class="muted">Phone: +63 912 345 5678</div>
+        </div>
+
+        <div class="social" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">© <span id="year"></span> Mabini, Batangas • Built with care</div>
+    </footer>
+  </div>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.getElementById('mobileNav');
+    toggle.addEventListener('click',()=>{
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      mobileNav.style.display = open ? 'none' : 'block';
+      mobileNav.setAttribute('aria-hidden', String(open));
+    });
+
+    // Simple carousel
+    const slides = document.getElementById('slides');
+    const dots = Array.from(document.querySelectorAll('.dot'));
+    let index = 0;
+    function goTo(i){
+      index = (i + dots.length) % dots.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d,di)=>d.classList.toggle('active', di===index));
+    }
+
+    dots.forEach((d, i)=>d.addEventListener('click', ()=>goTo(i)));
+
+    // autoplay
+    let autoplay = setInterval(()=>goTo(index+1), 6000);
+    // pause on hover
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', ()=>clearInterval(autoplay));
+    carousel.addEventListener('mouseleave', ()=>autoplay = setInterval(()=>goTo(index+1), 6000));
+
+    // keyboard controls
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight') goTo(index+1);
+      if(e.key === 'ArrowLeft') goTo(index-1);
+    });
+
+    // Ensure images have alt text already included for accessibility
+  </script>
+</body>
+</html>
